@@ -15,7 +15,7 @@ class PostController extends Controller
         $posts = Cache::remember('posts', 60, function () {
             return Post::with('tags')->get();
         });
-        return view('layouts.navbar', compact('posts'));
+        return view('posts.index', compact('posts'));
     }
 
     public function create()

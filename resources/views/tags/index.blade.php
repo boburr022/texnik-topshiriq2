@@ -6,6 +6,7 @@
 @section('content')
     <h1 class="text-2xl font-bold mb-4">All Tags</h1>
     <a href="{{ route('tags.create') }}" class="bg-blue-500 text-white px-4 py-2 rounded">Create New Tag</a>
+    <a href="{{ route('main') }}" class="bg-red-500 text-white px-4 py-2 rounded">Back To Home</a>
     <div class="mt-6">
         @foreach($tags as $tag)
             <div class="bg-white p-6 rounded-lg shadow-md mb-4">

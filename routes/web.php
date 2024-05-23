@@ -1,7 +1,9 @@
 <?php
 
+use App\Http\Controllers\MainController;
 use App\Http\Controllers\PostController;
 use Illuminate\Support\Facades\Route;
+
 
 use App\Http\Controllers\TagController;
 
@@ -16,7 +18,7 @@ use App\Http\Controllers\TagController;
 |
 */
 
-Route::get('/', [PostController::class, 'index'])->name('main');
+Route::get('/', [MainController::class, 'main'])->name('main');
 
 
 Route::resource('posts', PostController::class);

@@ -15,5 +15,6 @@
             @enderror
         </div>
         <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded">Create</button>
+        <a href="{{ route('tags.index') }}" class="bg-red-500 text-white px-4 py-2 rounded">Back To Home</a>
     </form>
 @endsection

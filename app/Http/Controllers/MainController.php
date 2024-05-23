@@ -6,8 +6,8 @@ use Illuminate\Http\Request;
 
 class MainController extends Controller
 {
-    public function index()
+    public function main()
     {
-        return view("dashboard");
+        return view("layouts.navbar");
     }
 }
